@@ -12,7 +12,13 @@ import { BiBorderNone } from 'react-icons/bi'
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: '#1d1836', color: '#fff', boxShadow: 'none' }}
+    contentStyle={{
+      background: 'linear-gradient(135deg, #1d1836 0%, #2b2455 100%)',
+      color: '#fff',
+      boxShadow: 'none',
+      border: '1px solid rgba(255, 255, 255, 0.1)',
+    }}
+    // contentStyle={{ background: '#1d1836', color: '#fff', boxShadow: 'none' }}
     contentArrowStyle={{ borderRight: '7px solid #232631' }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}

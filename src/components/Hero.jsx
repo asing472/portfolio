@@ -1,10 +1,35 @@
 import { useState, useEffect } from 'react'
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaBehance, FaWhatsapp, FaInstagram } from 'react-icons/fa'
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { photo } from '../assets'
 
+
+const socials = [
+  {icon: <FaBehance />, path: 'https://www.behance.net/akashsingh24'},
+  {icon: <FaLinkedin />, path: 'https://www.linkedin.com/in/07aks/'},
+  {icon: <FaGithub />, path: 'https://github.com/asing472/'},
+  {icon: <FaInstagram />, path: 'https://www.instagram.com/the_meticulous_guy/'}
+]
+const Social = ({ containerStyles, iconStyles }) => {
+  return (
+    <div className={containerStyles}>
+      {socials.map((item, index) => (
+        <a 
+          key={index} 
+          href={item.path} 
+          className={iconStyles} 
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          {item.icon}
+        </a>
+      ))}
+    </div>
+  );
+};
 
 const Photo = () => {
 
@@ -86,11 +111,12 @@ const Hero = () => {
             <h1 className={`${styles.heroHeadText} text-white`}>
               Hi, I'm <span className='text-[#915EFF]'>Akash</span>
             </h1>
-            <p className={`text-[20px] mt-2 text-gray-200`}>
+            <p className={`text-[16px] mt-2 text-gray-300 font-mono`}>
             designing intuitive experiences by day and running the <br className='sm:block hidden' />
             world by night. When I’m not creating, you’ll find me  <br className='sm:block hidden' />
-            in my garden or trekking new trails.”
+            in my garden or trekking new trails.
             </p>
+            <Social containerStyles="flex gap-6 mt-10 relative z-10" iconStyles="w-8 h-8 rounded-lg bg-opacity-10 bg-slate-300 flex justify-center items-center text-lg text-white hover:bg-[#915EFF] hover:text-black cursor-pointer"/>
           </div>
           <div>
             <Photo/>

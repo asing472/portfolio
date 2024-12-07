@@ -24,5 +24,5 @@ export {
   ComputersCanvas, 
   StarsCanvas,
   Photo,
-  ScrollButton
+  ScrollButton,
 }
