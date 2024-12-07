@@ -51,16 +51,20 @@ import {
   
   const services = [
     {
-      title: "UI/UX Intern",
-      icon: figma,
+      title: "UX/UI Designer",
+      icon: backend,
     },
     {
-      title: "Frontend Developer",
-      icon: reactjs,
-    },
-    {
-      title: "Fullstack Software Engineer",
+      title: "Web Developer",
       icon: web,
+    },
+    {
+      title: "Frontend Dev",
+      icon: mobile,
+    },
+    {
+      title: "Visual Identity",
+      icon: creator,
     },
   ];
   

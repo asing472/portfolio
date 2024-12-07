@@ -8,10 +8,11 @@ import { styles } from '../styles'
 import { experiences } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { textVariant } from "../utils/motion";
+import { BiBorderNone } from 'react-icons/bi'
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
-    contentStyle={{ background: '#1d1836', color: '#fff' }}
+    contentStyle={{ background: '#1d1836', color: '#fff', boxShadow: 'none' }}
     contentArrowStyle={{ borderRight: '7px solid #232631' }}
     date={experience.date}
     iconStyle={{ background: experience.iconBg }}
@@ -37,7 +38,7 @@ const ExperienceCard = ({ experience }) => (
       {experience.points.map((point, index) => (
         <li
           key={`experience-point-${index}`}
-          className='text-white-100 text=[14px] pl-1 tracking-wider'   
+          className='text-white-100 text-[14px] pl-1 tracking-wider'   
         >
           {point}
         </li>
