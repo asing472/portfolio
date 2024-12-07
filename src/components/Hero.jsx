@@ -86,7 +86,7 @@ const Hero = () => {
             <h1 className={`${styles.heroHeadText} text-white`}>
               Hi, I'm <span className='text-[#915EFF]'>Akash</span>
             </h1>
-            <p className={`text-[22px] mt-2 text-gray-200`}>
+            <p className={`text-[20px] mt-2 text-gray-200`}>
             designing intuitive experiences by day and running the <br className='sm:block hidden' />
             world by night. When I’m not creating, you’ll find me  <br className='sm:block hidden' />
             in my garden or trekking new trails.”
