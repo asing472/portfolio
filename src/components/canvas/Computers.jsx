@@ -126,7 +126,8 @@ const ComputersCanvas = () => {
             top: cursorPosition.y + 20,
             left: cursorPosition.x + 20,
             color: "yellow",
-            fontSize: "14px",
+            fontSize: "16px",
+            fontFamily: "monospace",
             pointerEvents: "none",
             transition: "top 0.1s, left 0.1s",
           }}

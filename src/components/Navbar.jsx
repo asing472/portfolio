@@ -51,7 +51,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${active === link.id ? "text-[#F45516]" : "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}
+              className={`${active === link.id ? "text-[#F45516]" : "text-secondary"} hover:text-white text-[18px] font-serif cursor-pointer`}
               onClick={() => {
                 if (link.id === "resume") {
                   window.open(resume, "_blank", "noopener,noreferrer");
