@@ -38,7 +38,7 @@ const ProjectCard = ({ index, name, sub_name, description, tags, image, source_c
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <Pill text={sub_name} />
-          <p className="mt-4 text-secondary text-[14px]">
+          <p className="mt-4 text-secondary text-[14px] font-sans">
             {description}
           </p>
         </div>
