@@ -35,7 +35,7 @@ const Social = ({ containerStyles, iconStyles }) => {
 const Photo = () => {
 
   return (
-    <div className="relative w-[200px] h-[200px] xl:w-[240px] xl:h-[240px] mx-auto">
+    <div className="relative w-[280px] h-[280px] lg:w-[240px] lg:h-[240px] mx-auto">
       {/* Photo */}
       <motion.img
         src={photo}
@@ -99,7 +99,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full ${isMobile ? "h-screen" : "h-screen"} mx-auto`}>
       <div
         className={`absolute inset-0 ${isMobile? "top-[90px]" : "top-[120px]"} max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -125,7 +125,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      {!isMobile&&<ComputersCanvas />}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#projects'>
