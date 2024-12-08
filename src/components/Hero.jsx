@@ -35,12 +35,12 @@ const Social = ({ containerStyles, iconStyles }) => {
 const Photo = () => {
 
   return (
-    <div className="relative w-[280px] h-[280px] lg:w-[240px] lg:h-[240px] mx-auto">
+    <div className="relative w-[260px] h-[260px] lg:w-[240px] lg:h-[240px] mx-auto">
       {/* Photo */}
       <motion.img
         src={photo}
         alt="photo"
-        className='object-contain rounded-full p-5'
+        className='object-contain rounded-full p-7'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { delay: 0.3, duration: 0.5 } }}
       />
@@ -49,18 +49,18 @@ const Photo = () => {
       <motion.svg
         className="absolute inset-0 w-full h-full"
         fill="transparent"
-        viewBox="0 0 500 500" // Increased viewBox size
+        viewBox="0 0 520 520" // Increased viewBox size
         xmlns="http://www.w3.org/2000/svg"
       >
         <motion.circle
-          cx="250" // Center of the viewBox (half of width)
-          cy="250" // Center of the viewBox (half of height)
-          r="250" // Radius (ensures no clipping with stroke width)
+          cx="260" // Half of the viewBox width/height
+          cy="260" // Half of the viewBox width/height
+          r="240" // Reduced from 250 to allow for stroke width
           stroke="#915EFF"
-          strokeWidth="6" // Match this to your design
-          strokeDasharray="5 30 50 30" // 1px dot, 10px gap, 15px dash, 10px gap
+          strokeWidth="6"
+          strokeDasharray="7 30 40 30"
           animate={{
-            strokeDashoffset: [0, -200], // Moves the pattern along the circle
+            strokeDashoffset: [0, -200],
           }}
           transition={{
             duration: 3,
@@ -99,7 +99,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className={`relative w-full ${isMobile ? "h-screen" : "h-screen"} mx-auto`}>
+    <section id="about" className={`relative w-full ${isMobile ? "h-screen" : "h-screen"} mx-auto`}>
       <div
         className={`absolute inset-0 ${isMobile? "top-[90px]" : "top-[120px]"} max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -117,7 +117,7 @@ const Hero = () => {
             world by night. When I’m not creating, you’ll find me  <br className='sm:block hidden' />
             in my garden or trekking new trails.
             </p>
-            <Social containerStyles="flex gap-6 mt-10 relative z-10" iconStyles={`${isMobile ? "w-12 h-12 text-3xl" : "w-8 h-8 text-lg"} rounded-lg bg-opacity-10 bg-slate-300 flex justify-center items-center text-white hover:bg-[#915EFF] hover:text-black cursor-pointer`}/>
+            <Social containerStyles="flex gap-6 mt-10 relative z-10" iconStyles={`${isMobile ? "w-10 h-10 text-2xl" : "w-8 h-8 text-lg"} rounded-lg bg-opacity-10 bg-slate-300 flex justify-center items-center text-white hover:bg-[#915EFF] hover:text-black cursor-pointer`}/>
           </div>
           <div>
             <Photo/>
@@ -148,4 +148,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero

@@ -130,6 +130,7 @@ const ComputersCanvas = () => {
             fontFamily: "monospace",
             pointerEvents: "none",
             transition: "top 0.1s, left 0.1s",
+            cursor: "pointer"
           }}
         >
           {cursorText}
