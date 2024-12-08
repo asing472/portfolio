@@ -117,7 +117,7 @@ const Hero = () => {
             world by night. When I’m not creating, you’ll find me  <br className='sm:block hidden' />
             in my garden or trekking new trails.
             </p>
-            <Social containerStyles="flex gap-6 mt-10 relative z-10" iconStyles={`${isMobile ? "w-10 h-10 text-2xl" : "w-8 h-8 text-lg"} rounded-lg bg-opacity-10 bg-slate-300 flex justify-center items-center text-white hover:bg-[#915EFF] hover:text-black cursor-pointer`}/>
+            <Social containerStyles="flex gap-6 mt-10 relative z-10" iconStyles={`${isMobile ? "w-10 h-10 text-2xl" : "w-10 h-10 text-2xl"} rounded-lg bg-opacity-10 bg-slate-300 flex justify-center items-center text-white hover:bg-[#915EFF] hover:text-black cursor-pointer`}/>
           </div>
           <div>
             <Photo/>
