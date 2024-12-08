@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation, BrowserRouter } from 'react-router-dom';
 import { Experience, Hero, Navbar, Tech, Works, StarsCanvas, ScrollButton } from './components';
 import AnimatedCursor from 'react-animated-cursor';
@@ -20,6 +20,23 @@ const ScrollToTop = () => {
 };
 
 const App = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check the screen width on mount and resize
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+    };
+
+    handleResize(); // Run on mount
+    window.addEventListener("resize", handleResize); // Update on resize
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Cleanup
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <AnimatedCursor
@@ -37,7 +54,7 @@ const App = () => {
         </div>
         <div className="relative z-0">
             <Hero />
-            <StarsCanvas />
+            {!isMobile&&<StarsCanvas />}
         </div>
         <Works />
         <Experience />
@@ -49,3 +66,5 @@ const App = () => {
 };
 
 export default App;
+
+        
