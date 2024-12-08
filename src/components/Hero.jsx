@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaBehance, FaWhatsapp, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaBehance, FaInstagram } from 'react-icons/fa'
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
@@ -13,6 +13,7 @@ const socials = [
   {icon: <FaGithub />, path: 'https://github.com/asing472/'},
   {icon: <FaInstagram />, path: 'https://www.instagram.com/the_meticulous_guy/'}
 ]
+// eslint-disable-next-line react/prop-types
 const Social = ({ containerStyles, iconStyles }) => {
   return (
     <div className={containerStyles}>
@@ -109,14 +110,14 @@ const Hero = () => {
         <div className={`flex items-center justify-between ${isMobile ? "flex-col space-y-14" : "flex-row space-x-40"}`}>
           <div>
             <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm <span className='text-[#915EFF]'>Akash</span>
+              Hi, I&apos;m <span className='text-[#915EFF]'>Akash</span>
             </h1>
             <p className={`text-[16px] mt-2 text-gray-300 font-mono`}>
             designing intuitive experiences by day and running the <br className='sm:block hidden' />
             world by night. When I’m not creating, you’ll find me  <br className='sm:block hidden' />
             in my garden or trekking new trails.
             </p>
-            <Social containerStyles="flex gap-6 mt-10 relative z-10" iconStyles="w-8 h-8 rounded-lg bg-opacity-10 bg-slate-300 flex justify-center items-center text-lg text-white hover:bg-[#915EFF] hover:text-black cursor-pointer"/>
+            <Social containerStyles="flex gap-6 mt-10 relative z-10" iconStyles={`${isMobile ? "w-12 h-12 text-3xl" : "w-8 h-8 text-lg"} rounded-lg bg-opacity-10 bg-slate-300 flex justify-center items-center text-white hover:bg-[#915EFF] hover:text-black cursor-pointer`}/>
           </div>
           <div>
             <Photo/>
