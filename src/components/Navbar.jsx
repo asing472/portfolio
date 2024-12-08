@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import { styles } from '../styles'
@@ -15,22 +15,21 @@ const Navbar = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActive(entry.target.id); // Update active link based on section ID
+            setActive(entry.target.id); // Update active state
+            window.history.pushState(null, '', `#${entry.target.id}`); // Update the URL
           }
         });
       },
       { threshold: 0.5 } // Trigger when 50% of the section is visible
     );
-
-    // Observe each section based on the navLinks
+  
     navLinks.forEach((link) => {
       const section = document.getElementById(link.id);
       if (section) {
         observer.observe(section);
       }
     });
-
-    // Cleanup observer when component is unmounted
+  
     return () => observer.disconnect();
   }, []);
 

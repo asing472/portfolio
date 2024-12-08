@@ -6,7 +6,6 @@ import { github } from '../assets'
 import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
-
 const Pill = ({ text }) => {
   return (
     <div className="inline-block px-6 py-2 mt-4 bg-blue-800 text-blue-100 font-medium rounded-full transition-all">
@@ -76,3 +75,5 @@ const Works = () => {
 }
 
 export default SectionWrapper(Works, "projects")
+
+//export default Works;
