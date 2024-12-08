@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useLocation, BrowserRouter } from 'react-router-dom';
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, ScrollButton } from './components';
+import { Experience, Hero, Navbar, Tech, Works, StarsCanvas, ScrollButton } from './components';
 import AnimatedCursor from 'react-animated-cursor';
 
 const ScrollToTop = () => {
