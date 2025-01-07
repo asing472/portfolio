@@ -27,7 +27,10 @@ import {
     threejs,
     minature,
     kanimuni,
-    sbx
+    sbx,
+    kamakhya,
+    koolphool,
+    togather
   } from "../assets";
   
   export const navLinks = [
@@ -136,7 +139,7 @@ import {
       company_name: "Capgemini India Ltd.",
       icon: capgemini,
       iconBg: "#383E56",
-      date: "Aug 2019 - May 2023",
+      date: "Aug 2019 - May 2021",
       points: [
         "Managed applications for Ahold Delhaize’s Retail team, supporting daily operations.",
         "Developed code with unit testing and integration testing providing support during functional testing.",
@@ -174,70 +177,84 @@ import {
   
   const projects = [
     {
-      name: "Minature",
-      sub_name: "BRANDING",
+      name: "ToGather",
+      sub_name: "PRODUCT DESIGN",
       description:
-        "Comprehensive brand identity for Minature Terrarium Store, including mission, vision, target audience, logo, typography, visual language, packaging design, and marketing materials",
+        "Application concept to plan weekend outings, dinners, and social events. The solution aims to reduce the time and effort spent on deciding where to go by offering curated suggestions based on preferences and location.",
       tags: [
         {
-          name: "logo design",
+          name: "ux research",
           color: "blue-text-gradient",
         },
         {
-          name: "packaging",
+          name: "design methods",
           color: "green-text-gradient",
-        },
-        {
-          name: "visual identity",
-          color: "pink-text-gradient",
-        },
+        }
       ],
-      image: minature,
-      source_code_link: "https://github.com/",
+      image: togather,
+      source_code_link: "https://www.behance.net/gallery/206989573/toGather-meeting-friends-made-easy",
     },
     {
       name: "Kanimuni",
       sub_name: "WEBSITE DESIGN",
       description:
-        "Developed a React website for the Kanimuni workshop on educational game design, held at IIT Guwahati’s Department of Design (Dec 8–17, 2023).",
+        "Developed a single page website for the Kanimuni workshop on educational game design that promotes learning concepts fun, held at IIT Guwahati’s Department of Design (Dec 8–17, 2023).",
       tags: [
         {
           name: "react.js",
           color: "blue-text-gradient",
         },
         {
-          name: "UI/UX Design",
+          name: "ux/ui design",
           color: "green-text-gradient",
         },
         {
-          name: "Frontend Development",
+          name: "frontend",
           color: "pink-text-gradient",
-        },
+        }
       ],
       image: kanimuni,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://www.behance.net/gallery/184709383/Website-Design-and-Dev-Kanimuni-Game-Design-Workshop",
     },
     {
       name: `Stackbox${"\u00A0".repeat(1.5)}Internship`,
-      sub_name: "CAMERA SURVEILLANCE FOR WMS",
+      sub_name: "PRODUCT DESIGN",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Designed and developed a Camera Surveillance feature for HUL as part of Samadhan Project to help with quantity mismatch issues at SBL (Sort by Light), PTL (Put to Light) and QC (Qualty Check) stations.",
       tags: [
         {
           name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "vidstack",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "frontend",
           color: "pink-text-gradient",
-        },
+        }
       ],
       image: sbx,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://www.behance.net/gallery/206509415/Camera-Surveillance-for-WMS-Stackbox-Internship",
+    },
+    {
+      name: "KoolPhool",
+      sub_name: "UX RESEARCH",
+      description:
+        "Design intervention to improve the experience of flower vendors in the context of Indian flower market with a focus on preservation and presentation of cut flowers and garlands.",
+      tags: [
+        {
+          name: "design methods",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "social innovation",
+          color: "green-text-gradient",
+        }
+      ],
+      image: koolphool,
+      source_code_link: "https://www.behance.net/gallery/184671607/KoolPhool-Indian-flower-market-UX-case-study",
     },
     {
       name: "Minature",
@@ -256,55 +273,29 @@ import {
         {
           name: "visual identity",
           color: "pink-text-gradient",
-        },
+        }
       ],
       image: minature,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://www.behance.net/gallery/195917103/Brand-Identity-Design-MINATURE",
     },
     {
-      name: "Minature",
-      sub_name: "BRANDING",
+      name: `Kamakhya${"\u00A0".repeat(1.5)}Temple`,
+      sub_name: "WAYFINDING",
       description:
-        "Comprehensive brand identity for Minature Terrarium Store, including mission, vision, target audience, logo, typography, visual language, packaging design, and marketing materials",
+        "A system with maps, directional, informational, emergency, and identification signage featuring illustrative iconographies of the temple’s deities to enhance navigation.",
       tags: [
         {
-          name: "logo design",
+          name: "information design",
           color: "blue-text-gradient",
         },
         {
-          name: "packaging",
+          name: "signage design",
           color: "green-text-gradient",
-        },
-        {
-          name: "visual identity",
-          color: "pink-text-gradient",
-        },
+        }
       ],
-      image: minature,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Minature",
-      sub_name: "BRANDING",
-      description:
-        "Comprehensive brand identity for Minature Terrarium Store, including mission, vision, target audience, logo, typography, visual language, packaging design, and marketing materials",
-      tags: [
-        {
-          name: "logo design",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "packaging",
-          color: "green-text-gradient",
-        },
-        {
-          name: "visual identity",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: minature,
-      source_code_link: "https://github.com/",
-    },
+      image: kamakhya,
+      source_code_link: "https://www.behance.net/gallery/196716091/Kamakhya-temple-Signages-and-Wayfindings",
+    }
   ];
   
   export { services, technologies, experiences, testimonials, projects };

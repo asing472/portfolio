@@ -35,6 +35,9 @@ import tripguide from "./tripguide.png";
 import minature from "./minature.png";
 import kanimuni from "./kanimuni.png";
 import sbx from "./sbx.png";
+import kamakhya from "./kamakhya.png";
+import koolphool from "./koolphool.png";
+import togather from "./togather.png";
 
 import photo from "./photo.png";
 import resume from "./resume.pdf";
@@ -74,5 +77,8 @@ export {
   resume,
   minature,
   kanimuni,
-  sbx
+  sbx,
+  kamakhya,
+  koolphool,
+  togather
 };
