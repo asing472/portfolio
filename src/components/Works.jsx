@@ -19,8 +19,7 @@ const ProjectCard = ({ index, name, sub_name, description, tags, image, source_c
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-      className="cursor-pointer"
-      onClick={() => window.open(source_code_link, "_blank")}
+      // onClick={() => window.open(source_code_link, "_blank")}
     >
       {/* Parent container for hover scaling */}
       <div className="transform transition-transform duration-300 hover:scale-105">
@@ -68,11 +67,13 @@ const Works = () => {
       </motion.div>
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard 
+          <a href={project.source_code_link} key={index} target="_blank" rel="noopener noreferrer">
+            <ProjectCard 
             key={`project-${index}`} 
             index={index}
             {...project}
           />
+          </a>
         ))}
 
       </div>
