@@ -59,7 +59,7 @@ const Tech = () => {
       </div>
     </div>
     <p className="flex flex-row items-center justify-center mt-36 mb-3 text-white-300 font-mono">
-        handcrafted with love, coffee and react.
+        handcrafted with love, coffee and ReactJS.
     </p>
     </>
   );
