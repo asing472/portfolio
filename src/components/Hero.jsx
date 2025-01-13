@@ -59,14 +59,14 @@ const Photo = () => {
           stroke="#915EFF"
           strokeWidth="6"
           strokeDasharray="7 30 40 30"
-          animate={{
-            strokeDashoffset: [0, -200],
-          }}
-          transition={{
-            duration: 3,
-            repeat: Infinity,
-            ease: "linear",
-          }}
+          // animate={{
+          //   strokeDashoffset: [0, -200],
+          // }}
+          // transition={{
+          //   duration: 3,
+          //   repeat: Infinity,
+          //   ease: "linear",
+          // }}
         />
       </motion.svg>
     </div>
